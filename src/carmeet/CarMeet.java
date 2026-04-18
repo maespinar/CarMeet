@@ -1,13 +1,12 @@
 
 package carmeet;
 
+import Acciones.EvaluacionVehiculos;
 import Gestiones.GestionExpositor;
 import Enums.Zona;
 import Enums.Categoria;
-import Interfaces.Auditable;
 import Vehiculos.AutoTuning;
 import Vehiculos.AutoClasico;
-import Vehiculos.Vehiculo;
 import Personas.Staff;
 import Personas.Expositor;
 
@@ -31,6 +30,8 @@ public class CarMeet {
         gestorExpositores.agregar(expositor2);
         gestorExpositores.agregar(expositor3);
         
+        EvaluacionVehiculos evaluacion = new EvaluacionVehiculos();
         
+        evaluacion.auditarLista(gestorExpositores, asesor1);
     }
 }

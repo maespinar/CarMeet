@@ -1,8 +1,6 @@
 
 package Personas;
 
-import Personas.Persona;
-
 public class Staff extends Persona{
     private final String codigoAsesor;
     private int propietariosAprobados;

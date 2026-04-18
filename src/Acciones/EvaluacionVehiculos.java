@@ -1,6 +1,7 @@
 
 package Acciones;
 
+import Gestiones.GestionExpositor;
 import Interfaces.Auditable;
 import Personas.Expositor;
 import Personas.Staff;
@@ -8,12 +9,11 @@ import Vehiculos.Vehiculo;
 
 public class EvaluacionVehiculos {
     
-    public EvaluacionVehiculos() {    
-    }
+    public EvaluacionVehiculos() {}
     
-    public void auditarLista(Expositor[] gestorExpositores, Staff asesorEncargado) {
-        for (int i = 0; i < gestorExpositores.length; i++) {
-            Expositor expositorActual = gestorExpositores[i];
+    public void auditarLista(GestionExpositor gestorExpositores, Staff asesorEncargado) {
+        for (int i = 0; i < gestorExpositores.getCantidadExpositores(); i++) {
+            Expositor expositorActual = gestorExpositores.getExpositores()[i];
             Vehiculo autoActual = expositorActual.getCarro();
             if (autoActual instanceof Auditable) {
                 Auditable autoAuditable = (Auditable) autoActual;

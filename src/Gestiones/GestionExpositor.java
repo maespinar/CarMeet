@@ -66,5 +66,21 @@ public class GestionExpositor implements Gestiones<Expositor>{
         return listaFinal;
     }
 
+    public int getCantidadExpositores() {
+        return cantidadExpositores;
+    }
+
+    public void setCantidadExpositores(int cantidadExpositores) {
+        this.cantidadExpositores = cantidadExpositores;
+    }
+
+    public Expositor[] getExpositores() {
+        return expositores;
+    }
+
+    public void setExpositores(Expositor[] expositores) {
+        this.expositores = expositores;
+    }
+
     
 }
