@@ -20,7 +20,7 @@ public class CarMeet {
         
         AutoTuning auto1 = new AutoTuning(7, "V7N-614", "Mazda RX-7", 2015, Categoria.JDM);
         AutoTuning auto2 = new AutoTuning(9, "F5G-224", "Mazdaspeed3", 2014, Categoria.JDM);
-        AutoClasico auto3 = new AutoClasico(45, "XXX-000", "Ford T", 1908, Categoria.EURO);
+        AutoClasico auto3 = new AutoClasico(45, "JHW-791", "Ford T", 1908, Categoria.EURO);
         
         Expositor expositor1 = new Expositor("Luis", "18182358", auto1, Zona.ESCENARIO);
         Expositor expositor2 = new Expositor("Raquel", "41069493", auto2, Zona.ESCENARIO);
